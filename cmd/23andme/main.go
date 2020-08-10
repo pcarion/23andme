@@ -21,5 +21,6 @@ func main() {
 		if err != nil {
 			log.Fatalf("error parsing file: %s", config.Datafile)
 		}
+		fmt.Printf("Number of SNPs: %d\n", len(p.Snips))
 	}))
 }
